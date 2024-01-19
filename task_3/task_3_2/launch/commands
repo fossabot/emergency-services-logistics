@@ -1,0 +1,71 @@
+set instance b1 box
+set instance b2 box
+set instance b3 box
+set instance b4 box
+set instance b5 box
+
+set instance p1 person
+set instance p2 person
+set instance p3 person
+
+set instance r1 robot
+
+set instance depot location
+set instance l1 location
+set instance l2 location
+
+set instance ca carrier
+set instance s1-ca slot
+set instance s2-ca slot
+set instance s3-ca slot
+set instance s4-ca slot
+
+set instance food content
+set instance medicine content
+set instance tool content
+
+set function (= (content-weight food) 2)
+set function (= (content-weight	medicine) 1)
+set function (= (content-weight tool) 3)
+set function (= (box-weight b1) 0)
+set function (= (box-weight b2) 0)
+set function (= (box-weight b3) 0)
+set function (= (box-weight b4) 0)
+set function (= (box-weight b5) 0)
+set function (= (carrier-weight ca) 0)
+
+set predicate (depot-at depot)
+set predicate (at b1 depot)
+set predicate (at b2 depot)
+set predicate (at b3 depot)
+set predicate (at b4 depot)
+set predicate (at b5 depot)
+
+set predicate (at food depot)
+set predicate (at medicine depot)
+set predicate (at tool depot)
+
+set predicate (at p1 l1)
+set predicate (at p2 l1)
+set predicate (at p3 l2)
+
+set predicate (at r1 depot)
+
+set predicate (at ca depot)
+
+set predicate (hands-free r1)
+set predicate (idle r1)
+
+set predicate (empty s1-ca ca)
+set predicate (empty s2-ca ca)
+set predicate (empty s3-ca ca)
+set predicate (empty s4-ca ca)
+
+set goal (and (has-content p1 food) (has-content p1 medicine) (has-content p2 medicine) (has-content p3 food))
+
+
+
+
+
+
+
