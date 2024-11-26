@@ -1,7 +1,7 @@
-Emergency services logistics
+# Emergency services logistics
 Automated planning project made with pddl, PDDL4J and planutils to tackle an emergency services logistics problem where the robotic agents must deliver some goods (food, medicine, tools) to people in need using a carrier and some boxes, and have to come up with the optimal plan. The strategy uses A-star search with a domain-specific heuristic.
 
-Overview
+## Overview
 The repository contains three directories.
 
 Task_1 and Task_2 Classical Planning
