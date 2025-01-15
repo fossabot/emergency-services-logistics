@@ -1,4 +1,6 @@
 # Emergency services logistics
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcarmgug%2Femergency-services-logistics.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcarmgug%2Femergency-services-logistics?ref=badge_shield)
+
 Automated planning project made with pddl, PDDL4J and planutils to tackle an emergency services logistics problem where the robotic agents must deliver some goods (food, medicine, tools) to people in need using a carrier and some boxes, and have to come up with the optimal plan. The strategy uses A-star search with a domain-specific heuristic.
 
 ## Overview
@@ -9,3 +11,7 @@ Three instances of the problem are modeled using pddl and are passed to a solver
 
 Task_3: Temporal Planning
 In the temporal planning setting, every action has now its duration, based on the weight of the carrier and/or the boxes and their content. The directory also contains the files needed to execute the plan on the PlanSys2 tool.
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcarmgug%2Femergency-services-logistics.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcarmgug%2Femergency-services-logistics?ref=badge_large)
